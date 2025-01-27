@@ -5,12 +5,11 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-.img {
+.img-responsive {
   max-width: 100%;
 }
 .grid {
   display: grid;
-
   grid-gap: 64px;
 }
 .grid-3-columns-footer {
@@ -30,9 +29,20 @@ body {
 .card-body {
   padding: 30px;
 }
-
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-footer {
   padding: 0 30px 30px;
+}
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: 100%;
 }
 .btn {
   display: block;
@@ -55,7 +65,7 @@ body {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 section.secondary {
   background-color: #f8f8f8;
@@ -221,5 +231,11 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
