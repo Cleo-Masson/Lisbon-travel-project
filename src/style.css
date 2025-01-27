@@ -6,7 +6,7 @@ body {
   margin: 0 auto;
 }
 header {
-  background-image: url("images/lisbon.jpg");
+  background-image: url("../Images/lisbon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
